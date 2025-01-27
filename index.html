@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Profesional - Alan Adrian Perez</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2A2D34;
+            --accent-color: #F7C548;
+            --text-color: #444;
+            --highlight-color: #F7C548;
+            --light-bg: #f9f9f9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .header {
+            background: var(--primary-color);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 1rem auto;
+            border: 5px solid var(--accent-color);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .section {
+            background: white;
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .skills-grid div {
+            text-align: center;
+            padding: 1rem;
+            background-color: #f4f4f4;
+            border-radius: 8px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .skills-grid div img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 0.8rem;
+        }
+
+        .grid-2cols {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .project-card {
+            background-color: #f4f4f4;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-card h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .project-card p {
+            font-size: 1.1rem;
+            color: var(--text-color);
+            margin: 1rem 0;
+        }
+
+        .project-link {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .project-link i {
+            margin-right: 0.5rem;
+        }
+
+        .project-link:hover {
+            color: var(--highlight-color);
+        }
+
+        .objective-text {
+            font-size: 1.2rem;
+            color: var(--text-color);
+            line-height: 1.6;
+            font-weight: 400;
+            margin-top: 1rem;
+            text-align: justify;
+            padding: 0 1rem;
+        }
+
+        .objective-text:hover {
+            color: var(--highlight-color);
+            transition: color 0.3s ease;
+        }
+
+        .course-list {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 1rem;
+        }
+
+        .course-list li {
+            font-size: 1.1rem;
+            color: var(--text-color);
+            margin-bottom: 0.8rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .course-list li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 1.5rem;
+            color: var(--accent-color);
+            margin-top: 0.2rem;
+        }
+
+        .course-list li:hover {
+            color: var(--highlight-color);
+            transition: color 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            .header {
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="https://bit.ly/4aA6ONM" alt="Foto de perfil" class="profile-img">
+       
+        <h1>Alan Adrian Perez</h1>
+        <p>Desarrollador Full Stack</p>
+    </header>
+
+    <main class="container">
+        <!-- Objetivo Profesional -->
+        <section class="section">
+            <h2>Objetivo Profesional</h2>
+            <p class="objective-text">Desarrollador full stack comprometido con la creación de soluciones tecnológicas innovadoras. Busco aplicar mis conocimientos en programación y diseño web para contribuir al éxito de proyectos desafiantes, manteniendo altos estándares de calidad y eficiencia.</p>
+        </section>
+
+        <!-- Formación Académica -->
+        <section class="section">
+            <h2>Formación Académica</h2>
+            <p><strong>Cursos Realizados:</strong></p>
+            <ul class="course-list">
+                <li>Técnico en Diseño y Programación de Páginas Web</li>
+                <li>Contabilidad Tributaria</li>
+                <li>Supervisión</li>
+                <li>Contabilidad de Costos</li>
+                <li>Cajero Bancario y Comercial</li>
+                <li>Auxiliar de Ventas</li>
+                <li>Electricidad Residencial</li>
+                <li>Emprendedor para PYMES</li>
+                <li>Reparación de Dispositivos Móviles</li>
+                <li>Auxiliar de Contabilidad</li>
+                <li>Paquete de Oficina</li>
+                <li>Secretariado y Recepción</li>
+                <li>Gestión de Inventarios</li>
+            </ul>
+        </section>
+
+        <!-- Habilidades Técnicas -->
+        <section class="section">
+            <h2>Habilidades Técnicas</h2>
+
+            <!-- Frontend -->
+            <h3>Frontend</h3>
+            <div class="skills-grid">
+                <div>
+                    <img src="https://bit.ly/4aBOCn6" alt="HTML5">
+                    <h3>HTML5</h3>
+                </div>
+                <div>
+                    <img src="https://tinyurl.com/2etnbtdh" alt="CSS3">
+                    <h3>CSS3</h3>
+                </div>
+                <div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript">
+                    <h3>JavaScript</h3>
+                </div>
+            </div>
+
+            <!-- Backend -->
+            <h3>Backend</h3>
+            <div class="skills-grid">
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTds8sc6RiqFPYdKnxrf-A5_GXzCgDEXxJx7Q&s" alt="Node.js">
+                    <h3>Node.js</h3>
+                </div>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTq7NhS34vHRoyhJB5SwOcs5OA6Y3xlaj6OA&s" alt="MongoDB">
+                    <h3>MongoDB</h3>
+                </div>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGEDtS6BT8k9I3xigJ2ucVcg8bjkdTAY3EQg&s" alt="MySQL">
+                    <h3>MySQL</h3>
+                </div>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJtcV9aq-lnjpfaBNbdm1JdpR7MQguttUzwA&s" alt="Express">
+                    <h3>Express</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portafolio Digital -->
+        <section class="section">
+            <h2>Portafolio Digital</h2>
+            <div class="grid-2cols">
+                <div class="project-card">
+                    <h3>Sistema de Reservas Hoteleras</h3>
+                    <p>Plataforma web moderna para gestión de reservas y clientes</p>
+                    <a href="https://srpython1.github.io/hotel-web-new/" target="_blank" class="project-link">
+                        <i class="fas fa-external-link-alt"></i> Ver Proyecto
+                    </a>
+                </div>
+                <div class="project-card">
+                    <h3>OnlyHate</h3>
+                    <p>Red social de libre expresión</p>
+                    <a href="https://srpython1.github.io/onlyhate-power/" target="_blank" class="project-link">
+                        <i class="fas fa-external-link-alt"></i> Ver Proyecto
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section class="section">
+            <h2>Contacto</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> working.of.code.in.python@email.com</p>
+                <p><i class="fas fa-phone"></i> +1 849 426 8794</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Animación al hacer scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.section').forEach(section => {
+            section.style.opacity = 0;
+            section.style.transform = 'translateY(20px)';
+            section.style.transition = 'all 0.6s ease-out';
+            observer.observe(section);
+        });
+    </script>
+   
+</body>
+</html> 
